@@ -1,0 +1,8 @@
+// Skulpter File | Raptor v0.0.8
+
+@mixin Skulpter {
+
+    margin: auto;
+    max-width: $BodyWrapper;
+    padding: 0 $Paddings 0 $Paddings;
+}
