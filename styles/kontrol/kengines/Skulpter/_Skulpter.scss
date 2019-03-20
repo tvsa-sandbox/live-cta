@@ -1,0 +1,8 @@
+// Skulpter File | Velociraptor v1.0.0
+
+@mixin Skulpter {
+
+    margin: auto;
+    max-width: $BodyWrapper;
+    padding: 0 $Paddings 0 $Paddings;
+}

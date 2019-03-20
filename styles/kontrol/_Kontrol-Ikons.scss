@@ -1,0 +1,19 @@
+// Ikons Kontrol File | Velociraptor v1.0.0
+
+// Iconset Name
+
+$IkonographyName: Iconfont-Name;
+
+// Basic
+
+$Ikonset: (
+    Twitter: ('\e905', #1da1f2),
+    Instagram: ('\e901', #e4405f),
+    Linkedin: ('\e904', #0077b5),
+    Dribbble: ('\e903', #ea4c89),
+    Behance: ('\e906', #1769ff),
+    Github: ('\e900', #444444),
+    Codepen: ('\e902', #444444)
+);
+
+@import './kengines/Ikons/Ikons';

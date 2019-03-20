@@ -1,0 +1,13 @@
+{
+  "short_name": "Kolibri",
+  "name": "Kolibri",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "512x512"
+  }],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#141414",
+  "theme_color": "#F86363",
+  "display": "standalone"
+}

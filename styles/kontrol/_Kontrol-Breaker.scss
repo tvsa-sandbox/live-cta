@@ -1,0 +1,14 @@
+// Breaker Kontrol File | Velociraptor v1.0.0
+
+// Breaker Sizes
+
+$Breakpoints: (
+    Smartphone: (0px,414px),
+    Tablet: (415px,768px),
+    Laptop: (769px,1024px),
+    Desktop: (1025px,1280px),
+    Desktop-HD: (1281px, 1440px),
+    All-Desktop: (769px)
+);
+
+@import './kengines/Breaker/Breaker';
