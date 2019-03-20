@@ -1,14 +1,14 @@
-// Ikons File | Velociraptor v1.0.0
+// Ikons File | Raptor v0.0.8
 
 @font-face {
     font-family: '#{$IkonographyName}';
-    font-display: auto;
-    src:local('#{$IkonographyName}'),
-        url('../assets/fonts/#{$IkonographyName}/#{$IkonographyName}.woff2') format('woff2'),
-        url('../assets/fonts/#{$IkonographyName}/#{$IkonographyName}.ttf') format('truetype'),
-        url('../assets/fonts/#{$IkonographyName}/#{$IkonographyName}.woff') format('woff');
+    src:
+        url('../assets/fonts/#{$IkonographyName}.woff2') format('woff2'),
+        url('../assets/fonts/#{$IkonographyName}.ttf') format('truetype'),
+        url('../assets/fonts/#{$IkonographyName}.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: auto;
 }
 
 @mixin Ikons {
