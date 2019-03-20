@@ -1,6 +1,6 @@
 {
-  "short_name": "Kolibri",
-  "name": "Kolibri",
+  "short_name": "Live CTA",
+  "name": "Live CTA",
   "icons": [{
     "src": "icon.png",
     "type": "image/png",
@@ -8,6 +8,6 @@
   }],
   "start_url": "/?utm_source=homescreen",
   "background_color": "#141414",
-  "theme_color": "#F86363",
+  "theme_color": "#141414",
   "display": "standalone"
 }
