@@ -1,0 +1,68 @@
+// LiveCallToolbar | Raptor v0.0.2
+
+@mixin hover {
+
+    &:hover{
+        opacity: 0.5;
+    }
+}
+
+@mixin text ($color : white, $size : 12px){
+
+    font-size: $size;
+    color: $color;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include hover;
+
+}
+@mixin container {
+    height: 14px;
+    display: flex;
+}
+
+
+.LiveCallToolbar {
+
+    &__DataContainer {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+    }
+
+    &__ShowContainer {
+
+        @include container;
+
+    }
+
+    &__ShowText {
+
+        @include text;
+
+    }
+    &__LiveContainer {
+
+        @include container;
+
+    }
+    &__LiveText {
+
+        @include text;
+
+    }
+    &__DateContainer {
+
+        @include container;
+
+    }
+    &__DateText {
+
+        @include text;
+
+    }
+}
