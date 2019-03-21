@@ -689,6 +689,21 @@ template {
   height: 14px;
   display: flex;
 }
+.LiveCallToolbar__LiveCircle {
+  margin-right: 5px;
+  width: 10px;
+}
+.LiveCallToolbar__LiveCircle::before {
+  animation-play-state: running;
+  animation: pulsar 2s 0.5s ease-in-out infinite;
+  background: white;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 7px;
+  width: 7px;
+  margin-top: 2px;
+}
 .LiveCallToolbar__LiveText {
   font-size: 12px;
   color: white;
@@ -699,6 +714,25 @@ template {
   opacity: 0.5;
 }
 
+@keyframes pulsar {
+  0% {
+    height: 8px;
+    opacity: 0;
+    transform: scale(0.2);
+    width: 8px;
+  }
+  50% {
+    height: 7px;
+    opacity: 1;
+    width: 7px;
+  }
+  100% {
+    height: 8px;
+    opacity: 0;
+    transform: scale(1);
+    width: 8px;
+  }
+}
 .TextContainer {
   font-family: Helvetica;
   line-height: 22px;
