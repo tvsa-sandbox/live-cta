@@ -322,14 +322,13 @@ template {
   text-transform: uppercase;
   font-size: 14px;
   color: #ffffff;
-  animation-name: ButtonPulsar;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  will-change: transform;
+  transition: transform 1s ease-out;
 }
 .LiveCall__Button:focus {
   outline-color: #f16767;
+}
+.LiveCall__Button:hover {
+  transform: scale(1.2);
 }
 .LiveCall__ButtonCopy {
   color: #ffffff;
@@ -340,19 +339,6 @@ template {
   text-transform: uppercase;
 }
 
-@keyframes ButtonPulsar {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-    box-shadow: -2px 2px 2px #1b655a;
-    text-shadow: -1px 1px 2px #8c3333;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 .LiveCall__ImageContainer {
   padding: 0 0 0 10%;
   width: 50%;
@@ -464,14 +450,13 @@ template {
   text-transform: uppercase;
   font-size: 14px;
   color: #8a1414;
-  animation-name: ButtonPulsar;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  will-change: transform;
+  transition: transform 1s ease-out;
 }
 .LiveCallBottom__Button:focus {
   outline-color: #ffe182;
+}
+.LiveCallBottom__Button:hover {
+  transform: scale(1.2);
 }
 .LiveCallBottom__ButtonCopy {
   color: #ffffff;
@@ -482,19 +467,6 @@ template {
   text-transform: uppercase;
 }
 
-@keyframes ButtonPulsar {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-    box-shadow: -2px 2px 2px #3c1b1b;
-    text-shadow: -1px 1px 2px #3c1b1b;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 .LiveCallBottom__ImageContainer {
   padding: 0 0 0 10%;
   width: 50%;
