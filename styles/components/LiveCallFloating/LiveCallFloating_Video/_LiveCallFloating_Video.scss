@@ -1,0 +1,31 @@
+// LiveCallFloating | Raptor v0.0.2
+
+.LiveCallFloating {
+
+    &__VideoContainer {
+
+        border-radius: 30px;
+        box-shadow: -4px 4px 10px $LCF-D5;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+
+        &::before {
+
+            content: '';
+            background: rgba($LCF-D1, 0.7);
+            height: 100%;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+    }
+
+    &__Video {
+
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

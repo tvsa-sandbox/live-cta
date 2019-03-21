@@ -1,3 +1,7 @@
+.Display {
+  display: none;
+}
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -179,17 +183,6 @@ template {
   display: none;
 }
 
-.Display {
-  display: none;
-}
-
-@font-face {
-  font-family: "Email-Signature";
-  src: url("../assets/fonts/Email-Signature.woff2") format("woff2"), url("../assets/fonts/Email-Signature.ttf") format("truetype"), url("../assets/fonts/Email-Signature.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: auto;
-}
 .Cover {
   background: #0D0D0D;
   color: #E5E5E5;
@@ -204,8 +197,496 @@ template {
   color: rgba(208, 208, 208, 0.5);
 }
 
-body {
-  background: red;
+.Dummy {
+  background: #ffffff;
+  color: #000000;
+  font-family: Helvetica, sans-serif;
+}
+
+.Buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Buttons__Button {
+  align-items: center;
+  background: #292929;
+  border-radius: 50%;
+  display: flex;
+  flex-shrink: 0;
+  height: 100px;
+  justify-content: center;
+  margin: 2%;
+  width: 100px;
+}
+.Buttons a {
+  color: #D0D0D0;
+  font-display: auto;
+  font-family: "Righteous", cursive;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  transition: 0.5s ease-out;
+  will-change: transform;
+}
+.Buttons a:hover {
+  background: #F86363;
+  color: #141414;
+  transform: scale(1.2);
+}
+
+.Headers {
+  text-align: center;
+}
+.Headers__Title {
+  color: #E5E5E5;
+  font-display: auto;
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
+}
+
+.LiveCall {
+  height: 60px;
+  width: 100%;
+}
+.LiveCall::before {
+  content: "";
+  background: linear-gradient(to right, #108674 70%, rgba(16, 134, 116, 0) 100%);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 30%;
+  z-index: 2;
+}
+.LiveCall::after {
+  content: "";
+  background: linear-gradient(to left, #108674 70%, rgba(16, 134, 116, 0) 100%);
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30%;
+  z-index: 1;
+}
+.LiveCall__Wrapper {
+  height: 60px;
+  margin: auto;
+  max-width: 1140px;
+  position: relative;
+}
+.LiveCall__Wrapper::before {
+  content: "";
+  background: rgba(16, 134, 116, 0.5);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.LiveCall__ContentContainer {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.Position-Below {
+  position: fixed;
+  top: 60px;
+  box-shadow: 0 3px 6px #6b6b6b;
+}
+.Position-Bottom {
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 -3px 6px #6b6b6b;
+}
+
+.LiveCall__ButtonContainer {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+.LiveCall__Button {
+  border-radius: 50px;
+  padding: 6px 40px;
+  text-align: center;
+  border: none;
+  background: #f16767;
+  font-family: Helvetica;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  animation-name: ButtonPulsar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  will-change: transform;
+}
+.LiveCall__Button:focus {
+  outline-color: #f16767;
+}
+.LiveCall__ButtonCopy {
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 10px;
+  padding: 0 0 4px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@keyframes ButtonPulsar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: -2px 2px 2px #1b655a;
+    text-shadow: -1px 1px 2px #8c3333;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.LiveCall__ImageContainer {
+  padding: 0 0 0 10%;
+  width: 50%;
+  box-sizing: border-box;
+}
+.LiveCall__Image {
+  height: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 414px) {
+  .LiveCall__ImageContainer {
+    padding: 2%;
+  }
+}
+.LiveCall__VideoContainer {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.LiveCall__Video {
+  bottom: 0;
+  display: block;
+  height: auto;
+  left: 0;
+  max-width: 100%;
+  min-width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.LiveCallBottom {
+  height: 60px;
+  width: 100%;
+}
+.LiveCallBottom::before {
+  content: "";
+  background: linear-gradient(to right, #ad4c4c 70%, rgba(173, 76, 76, 0) 100%);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 30%;
+  z-index: 2;
+}
+.LiveCallBottom::after {
+  content: "";
+  background: linear-gradient(to left, #ad4c4c 70%, rgba(173, 76, 76, 0) 100%);
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30%;
+  z-index: 1;
+}
+.LiveCallBottom__Wrapper {
+  height: 60px;
+  margin: auto;
+  max-width: 1140px;
+  position: relative;
+}
+.LiveCallBottom__Wrapper::before {
+  content: "";
+  background: rgba(173, 76, 76, 0.5);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.LiveCallBottom__ContentContainer {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.Position-Below {
+  position: fixed;
+  top: 60px;
+  box-shadow: 0 3px 6px #6b6b6b;
+}
+.Position-Bottom {
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 -3px 6px #6b6b6b;
+}
+
+.LiveCallBottom__ButtonContainer {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+.LiveCallBottom__Button {
+  border-radius: 50px;
+  padding: 6px 40px;
+  text-align: center;
+  border: none;
+  background: #ffe182;
+  font-family: Helvetica;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #8a1414;
+  animation-name: ButtonPulsar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  will-change: transform;
+}
+.LiveCallBottom__Button:focus {
+  outline-color: #ffe182;
+}
+.LiveCallBottom__ButtonCopy {
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 10px;
+  padding: 0 0 4px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@keyframes ButtonPulsar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: -2px 2px 2px #3c1b1b;
+    text-shadow: -1px 1px 2px #3c1b1b;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.LiveCallBottom__ImageContainer {
+  padding: 0 0 0 10%;
+  width: 50%;
+  box-sizing: border-box;
+}
+.LiveCallBottom__Image {
+  height: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 414px) {
+  .LiveCallBottom__ImageContainer {
+    padding: 2%;
+  }
+}
+.LiveCallBottom__VideoContainer {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.LiveCallBottom__Video {
+  bottom: 0;
+  display: block;
+  height: auto;
+  left: 0;
+  max-width: 100%;
+  min-width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.LiveCallFloating {
+  bottom: 10%;
+  display: block;
+  height: 60px;
+  left: 0;
+  margin: auto;
+  max-width: 90%;
+  position: fixed;
+  right: 0;
+}
+.LiveCallFloating__Wrapper {
+  height: 100%;
+}
+.LiveCallFloating__ContentContainer {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.LiveCallFloating__ButtonContainer {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.LiveCallFloating__Button {
+  border-radius: 50px;
+  padding: 8px 50px;
+  text-align: center;
+  border: none;
+  background: #ff6464;
+  font-family: Helvetica;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffd7d7;
+  animation-name: ButtonFloating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  will-change: transform;
+}
+.LiveCallFloating__Button:focus {
+  outline-color: #ff6464;
+}
+.LiveCallFloating__ButtonCopy {
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 10px;
+  padding: 5px 8px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+@keyframes ButtonFloating {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: -3px 3px 3px #37393a;
+    text-shadow: -1px 1px 2px #bf4747;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.LiveCallFloating__ImageContainer {
+  text-align: center;
+  width: 50%;
+}
+.LiveCallFloating__Image {
+  height: 100%;
+  max-width: 100%;
+}
+
+.LiveCallFloating__VideoContainer {
+  border-radius: 30px;
+  box-shadow: -4px 4px 10px #6b6b6b;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.LiveCallFloating__VideoContainer::before {
+  content: "";
+  background: rgba(49, 56, 62, 0.7);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.LiveCallFloating__Video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.TextContainer {
+  font-family: Helvetica;
+  line-height: 22px;
+  margin: auto;
+  max-width: 850px;
+}
+
+@media (max-width: 1140px) {
+  .TextContainer {
+    padding: 0px 20px;
+  }
+}
+.HeaderEstrellas {
+  background: #000000;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+}
+.HeaderEstrellas__Wrapper {
+  margin: auto;
+  max-width: 1140px;
+  width: 100%;
+  display: flex;
+}
+.HeaderEstrellas__LogoContainer {
+  width: 50%;
+}
+.HeaderEstrellas__MenuContainer {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5%;
+  box-sizing: border-box;
+}
+.HeaderEstrellas__Menu {
+  background: url(./../images/Menu_Icon.png) center/40px;
+  width: 40px;
+  height: 40px;
+  border: solid 1px #ffffff;
+  border-radius: 6px;
+}
+.HeaderEstrellas__Logo {
+  margin: 0;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: url("./../images/Estrellas_Logo.png") center 0/150px no-repeat;
+}
+
+.Article {
+  font-family: "Roboto", sans-serif;
+  font-display: auto;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=Main.css.map */

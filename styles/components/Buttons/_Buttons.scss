@@ -1,0 +1,41 @@
+// Buttons File | Raptor v0.0.2
+
+.Buttons {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__Button {
+
+        align-items: center;
+        background: $K-D3;
+        border-radius: 50%;
+        display: flex;
+        flex-shrink: 0;
+        height: 100px;
+        justify-content: center;
+        margin: 2%;
+        width: 100px;
+
+    }
+
+    a {
+
+        color: $K-D5;
+        font-display: auto;
+        font-family: 'Righteous', cursive;
+        letter-spacing: .03em;
+        text-transform: uppercase;
+        transition: .5s ease-out;
+        will-change: transform;
+
+        &:hover {
+
+            background: $K-D6;
+            color: $K-D2;
+            transform: scale(1.2);
+
+        }
+    }
+}

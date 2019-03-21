@@ -1,0 +1,80 @@
+// LiveCall | Raptor v0.0.2
+
+.LiveCall {
+
+    height: 60px;
+    width: 100%;
+
+    &::before {
+
+        content: '';
+        background: linear-gradient(to right,$LC-D1 70%, rgba($LC-D1, 0) 100%);
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 30%;
+        z-index: 2;
+
+    }
+
+    &::after {
+
+        content: "";
+        background: linear-gradient(to left, $LC-D1 70%, rgba($LC-D1, 0) 100%);
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30%;
+        z-index: 1;
+
+    }
+
+    &__Wrapper {
+
+        height: 60px;
+        margin: auto;
+        max-width: 1140px;
+        position: relative;
+
+        &::before {
+
+            content: "";
+            background: rgba($LC-D1, 0.5);
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+
+        }
+    }
+
+    &__ContentContainer {
+
+        display: flex;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+
+    }
+}
+
+.Position {
+
+    &-Below {
+
+        position: fixed;
+        top: 60px;
+        box-shadow: 0 3px 6px $LC-D5;
+
+    }
+
+    &-Bottom {
+        position: fixed;
+        bottom: 0;
+        box-shadow: 0 -3px 6px $LC-D5;
+    }
+}
