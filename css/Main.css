@@ -490,7 +490,7 @@ template {
 .LiveCallBottom__Video {
   bottom: 0;
   display: block;
-  height: auto;
+  height: 100%;
   left: 0;
   max-width: 100%;
   min-width: 100%;
@@ -498,6 +498,7 @@ template {
   right: 0;
   top: 0;
   width: 100%;
+  object-fit: cover;
 }
 
 .LiveCallFloating {
