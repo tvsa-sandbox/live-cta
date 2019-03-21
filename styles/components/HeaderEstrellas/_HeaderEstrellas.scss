@@ -1,0 +1,58 @@
+// Header Estrellas File | Raptor v0.0.2
+
+.HeaderEstrellas {
+
+    background: $E-D1;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+
+    &__Wrapper {
+
+        @include Shaper;
+        width: 100%;
+        display: flex;
+    }
+
+    &__LogoContainer {
+
+        width: 50%;
+
+    }
+
+    &__MenuContainer {
+
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 5%;
+        box-sizing: border-box;
+
+    }
+
+    &__Menu {
+
+        background: url(./../images/Menu_Icon.png) center/40px;
+        width: 40px;
+        height: 40px;
+        border: solid 1px $E-D2;
+        border-radius: 6px;
+
+    }
+
+
+    &__Logo {
+
+        margin: 0;
+        width: 200px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        background: url('./../images/Estrellas_Logo.png') center 0 /150px no-repeat;
+
+    }
+}

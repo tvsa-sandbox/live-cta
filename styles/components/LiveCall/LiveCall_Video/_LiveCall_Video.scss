@@ -1,0 +1,25 @@
+// LiveCall Video | Raptor v0.0.2
+
+.LiveCall {
+
+    &__VideoContainer {
+
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__Video {
+
+        bottom: 0;
+        display: block;
+        height: auto;
+        left: 0;
+        max-width: 100%;
+        min-width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+}
