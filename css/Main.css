@@ -637,6 +637,10 @@ template {
   justify-content: center;
   align-items: center;
 }
+.LiveCallToolbar__IconContainer:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
+}
 .LiveCallToolbar__Icon {
   width: 0;
   height: 0;
@@ -650,7 +654,23 @@ template {
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  margin-left: 12px;
 }
+
+.LiveCallToolbar__DateContainer {
+  height: 14px;
+  display: flex;
+}
+.LiveCallToolbar__DateText {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.LiveCallToolbar__DateText:hover {
+  opacity: 0.5;
+}
+
 .LiveCallToolbar__ShowContainer {
   height: 14px;
   display: flex;
@@ -664,6 +684,7 @@ template {
 .LiveCallToolbar__ShowText:hover {
   opacity: 0.5;
 }
+
 .LiveCallToolbar__LiveContainer {
   height: 14px;
   display: flex;
@@ -675,19 +696,6 @@ template {
   text-transform: uppercase;
 }
 .LiveCallToolbar__LiveText:hover {
-  opacity: 0.5;
-}
-.LiveCallToolbar__DateContainer {
-  height: 14px;
-  display: flex;
-}
-.LiveCallToolbar__DateText {
-  font-size: 12px;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.LiveCallToolbar__DateText:hover {
   opacity: 0.5;
 }
 
