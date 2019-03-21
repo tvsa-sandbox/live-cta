@@ -1,0 +1,64 @@
+// LiveCallToolbar | Raptor v0.0.2
+
+.LiveCallToolbar {
+
+    &__ButtonContainer {
+
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    &__Button {
+
+        border-radius: 50px;
+        padding: 8px 50px;
+        text-align: center;
+        border: none;
+        background: $LCF-D4;
+        font-family: Helvetica;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: $LCF-D3;
+
+        animation-name: ButtonFloating;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function:ease-in-out;
+
+        will-change: transform;
+
+        &:focus {
+            outline-color: $LCF-D4;
+        }
+    }
+
+    &__ButtonCopy {
+
+        color: $LCF-D2;
+        font-family: Helvetica;
+        font-size: 10px;
+        padding: 5px 8px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 150px;
+
+    }
+}
+
+@keyframes ButtonFloating {
+
+    0%  {
+            transform: scale(1);
+        }
+
+    50% {
+            transform: scale(1.1);
+            box-shadow: -3px 3px 3px $LCF-D6;
+            text-shadow: -1px 1px 2px $LCF-D7;
+        }
+    100% {
+            transform: scale(1);
+        }
+}
