@@ -632,7 +632,7 @@ template {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background-color: #DD307E;
+  background-color: rgba(0, 0, 0, 0.5);
   margin: 5px 10px;
   justify-content: center;
   align-items: center;
