@@ -822,13 +822,14 @@ template {
 }
 
 .LiveCallToolbarDark__LiveContainer {
+  align-items: center;
   background: #DD307E;
   border-radius: 15px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
   height: 25px;
+  justify-content: center;
+  margin-left: 10px;
+  width: 100px;
 }
 .LiveCallToolbarDark__LiveContainer:hover {
   opacity: 0.5;
