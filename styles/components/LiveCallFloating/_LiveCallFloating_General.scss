@@ -1,0 +1,28 @@
+// LiveCallFloating | Raptor v0.0.2
+
+.LiveCallFloating {
+
+    bottom: 10%;
+    display: block;
+    height: 60px;
+    left: 0;
+    margin: auto;
+    max-width: 90%;
+    position: fixed;
+    right: 0;
+
+    &__Wrapper {
+
+        height: 100%;
+    }
+
+    &__ContentContainer {
+
+        display: flex;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+}

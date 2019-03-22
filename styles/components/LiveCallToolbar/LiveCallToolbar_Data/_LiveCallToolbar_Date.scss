@@ -1,0 +1,18 @@
+// LiveCallToolbar | Raptor v0.0.2
+
+.LiveCallToolbar {
+
+    &__DateContainer {
+
+        @include container;
+
+    }
+
+    &__DateText {
+
+        @include text;
+
+        opacity: 0.8;
+
+    }
+}

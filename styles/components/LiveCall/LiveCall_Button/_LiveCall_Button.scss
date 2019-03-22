@@ -1,0 +1,50 @@
+// LiveCall Button | Raptor v0.0.2
+
+.LiveCall {
+
+    &__ButtonContainer {
+
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+		padding: 5px;
+		box-sizing: border-box;
+		justify-content: center;
+		align-items: center;
+
+    }
+
+    &__Button {
+
+        border-radius: 50px;
+        padding: 6px 40px;
+        text-align: center;
+        border: none;
+        background: $LC-D4;
+        font-family: Helvetica;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: $LC-D3;
+        transition: transform 1s ease-out;
+
+        &:focus {
+            outline-color: $LC-D4;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__ButtonCopy {
+
+        color: $LC-D2;
+        font-family: Helvetica;
+        font-size: 10px;
+        padding: 0 0 4px 0;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+}

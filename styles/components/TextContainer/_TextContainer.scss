@@ -1,0 +1,18 @@
+// Text Container | Raptor v0.0.2
+
+.TextContainer {
+
+    font-family: Helvetica;
+    line-height: 22px;
+    margin: auto;
+    max-width: 850px;
+}
+
+@media (max-width: 1140px) {
+
+    .TextContainer {
+
+        padding: 0px 20px;
+
+    }
+}
