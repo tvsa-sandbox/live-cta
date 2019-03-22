@@ -1,3 +1,6 @@
 # Gitignore
 
 css/*.map
+
+# System
+.DS_Store

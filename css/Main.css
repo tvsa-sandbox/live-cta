@@ -602,6 +602,287 @@ template {
   object-fit: cover;
 }
 
+.LiveCallToolbar {
+  bottom: 0%;
+  display: flex;
+  justify-content: center;
+  height: 46px;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  background: #F74F9B;
+  text-decoration: none;
+}
+.LiveCallToolbar__Wrapper {
+  height: 100%;
+  max-width: 900px;
+  width: 100%;
+}
+.LiveCallToolbar__ContentContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.LiveCallToolbar__IconContainer {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 5px 10px;
+  justify-content: center;
+  align-items: center;
+}
+.LiveCallToolbar__IconContainer:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
+}
+.LiveCallToolbar__Icon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 10px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+.LiveCallToolbar__DataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-left: 12px;
+}
+
+.LiveCallToolbar__DateContainer {
+  height: 14px;
+  display: flex;
+}
+.LiveCallToolbar__DateText {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.LiveCallToolbar__DateText:hover {
+  opacity: 0.5;
+}
+
+.LiveCallToolbar__ShowContainer {
+  height: 14px;
+  display: flex;
+}
+.LiveCallToolbar__ShowText {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.LiveCallToolbar__ShowText:hover {
+  opacity: 0.5;
+}
+
+.LiveCallToolbar__LiveContainer {
+  height: 14px;
+  display: flex;
+}
+.LiveCallToolbar__LiveCircle {
+  margin-right: 5px;
+  width: 10px;
+}
+.LiveCallToolbar__LiveCircle::before {
+  animation-play-state: running;
+  animation: pulsar 2s 0.5s ease-in-out infinite;
+  background: white;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 7px;
+  width: 7px;
+  margin-top: 2px;
+}
+.LiveCallToolbar__LiveText {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.LiveCallToolbar__LiveText:hover {
+  opacity: 0.5;
+}
+
+@keyframes pulsar {
+  0% {
+    height: 8px;
+    opacity: 0;
+    transform: scale(0.2);
+    width: 8px;
+  }
+  50% {
+    height: 7px;
+    opacity: 1;
+    width: 7px;
+  }
+  100% {
+    height: 8px;
+    opacity: 0;
+    transform: scale(1);
+    width: 8px;
+  }
+}
+.LiveCallToolbarDark {
+  bottom: 0%;
+  display: flex;
+  justify-content: center;
+  height: 46px;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  background: #343447;
+  text-decoration: none;
+}
+.LiveCallToolbarDark__Wrapper {
+  height: 100%;
+  max-width: 900px;
+  width: 100%;
+}
+.LiveCallToolbarDark__ContentContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.LiveCallToolbarDark__IconContainer {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 5px 10px;
+  justify-content: center;
+  align-items: center;
+}
+.LiveCallToolbarDark__IconContainer:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
+}
+.LiveCallToolbarDark__Icon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 10px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+.LiveCallToolbarDark__DataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-left: 12px;
+}
+
+.LiveCallToolbarDark__DateContainer {
+  height: 14px;
+  display: flex;
+}
+.LiveCallToolbarDark__DateText {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.LiveCallToolbarDark__DateText:hover {
+  opacity: 0.5;
+}
+
+.LiveCallToolbarDark__ShowContainer {
+  height: 14px;
+  display: flex;
+}
+.LiveCallToolbarDark__ShowText {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.LiveCallToolbarDark__ShowText:hover {
+  opacity: 0.5;
+}
+
+.LiveCallToolbarDark__LiveContainer {
+  background: #DD307E;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 25px;
+}
+.LiveCallToolbarDark__LiveContainer:hover {
+  opacity: 0.5;
+}
+.LiveCallToolbarDark__LiveCircle::after {
+  content: "VER";
+  display: block;
+  font-size: 12px;
+  color: white;
+  margin-right: 5px;
+}
+.LiveCallToolbarDark__LiveText {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: flex;
+}
+.LiveCallToolbarDark__LiveText:hover {
+  opacity: 0.5;
+}
+.LiveCallToolbarDark__LiveText::before {
+  animation-play-state: running;
+  animation: pulsar 2s 0.5s ease-in-out infinite;
+  background: white;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 7px;
+  width: 7px;
+  margin-top: 2px;
+  margin-right: 5px;
+}
+
+@keyframes pulsar {
+  0% {
+    height: 8px;
+    opacity: 0;
+    transform: scale(0.2);
+    width: 8px;
+  }
+  50% {
+    height: 7px;
+    opacity: 1;
+    width: 7px;
+  }
+  100% {
+    height: 8px;
+    opacity: 0;
+    transform: scale(1);
+    width: 8px;
+  }
+}
 .TextContainer {
   font-family: Helvetica;
   line-height: 22px;
