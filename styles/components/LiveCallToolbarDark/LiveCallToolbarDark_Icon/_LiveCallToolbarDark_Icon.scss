@@ -1,0 +1,32 @@
+// LiveCallToolbarDark | Raptor v0.0.2
+
+.LiveCallToolbarDark {
+
+    &__IconContainer {
+
+        display: flex;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: rgba(0,0,0,0.5);
+        margin: 5px 10px;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+
+            transform: scale(1.15);
+            opacity: 0.8;
+
+        }
+    }
+
+    &__Icon {
+
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 0 6px 10px;
+        border-color: transparent transparent transparent #ffffff;
+    }
+}
