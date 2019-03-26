@@ -590,7 +590,6 @@ template {
 }
 .LiveCallFloating__VideoContainer::before {
   content: "";
-  background: rgba(49, 56, 62, 0.7);
   height: 100%;
   position: absolute;
   top: 0;
