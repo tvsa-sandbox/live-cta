@@ -387,22 +387,22 @@ template {
 }
 .LiveCallBottom::before, .LiveCallBottom-clean::before {
   content: "";
-  background: linear-gradient(to right, #ffffff 70%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, #108674 70%, rgba(255, 255, 255, 0) 100%);
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
-  width: 15%;
+  width: 30%;
   z-index: 2;
 }
 .LiveCallBottom::after, .LiveCallBottom-clean::after {
   content: "";
-  background: linear-gradient(to left, #ffffff 70%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to left, #108674 70%, rgba(255, 255, 255, 0) 100%);
   height: 100%;
   position: absolute;
   right: 0;
   top: 0;
-  width: 15%;
+  width: 30%;
   z-index: 1;
 }
 .LiveCallBottom__Wrapper {
@@ -458,7 +458,7 @@ template {
   padding: 6px 20px;
   text-align: center;
   border: none;
-  background: #f8d20b;
+  background: #f16767;
   font-family: Helvetica;
   text-transform: uppercase;
   font-size: 14px;
@@ -466,7 +466,7 @@ template {
   transition: transform 1s ease-out;
 }
 .LiveCallBottom__Button:focus {
-  outline-color: #f8d20b;
+  outline-color: #f16767;
 }
 .LiveCallBottom__Button:hover {
   transform: scale(1.2);
@@ -567,8 +567,9 @@ template {
   font-size: 10px;
   padding: 5px 8px;
   text-align: center;
+  text-shadow: 2px 2px 2px #000000;
   text-transform: uppercase;
-  width: 150px;
+  width: 250px;
 }
 
 @keyframes ButtonFloating {
