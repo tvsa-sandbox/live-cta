@@ -1,6 +1,6 @@
 // LiveCall | Raptor v0.0.2
 
-.LiveCall {
+.LiveCall, %lc {
 
     height: 60px;
     width: 100%;
@@ -47,6 +47,22 @@
             width: 100%;
             z-index: 1;
 
+        }
+
+        &-clean {
+            @extend %lc;
+            
+            &::before {
+
+                background: transparent;
+
+            }
+
+            &::after {
+
+                background: transparent;
+
+            }
         }
     }
 

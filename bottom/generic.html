@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Toolbar Call to Action Themed | Las Estrellas</title>
+        <title>Bottom Video Call to Action Themed | Las Estrellas</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -33,37 +33,38 @@
                 </div>
             </nav>
 
-            <a class="LiveCallToolbar" href="./">
-                <div class="LiveCallToolbar__Wrapper">
-                    <div class="LiveCallToolbar__ContentContainer">
-                        <div class="LiveCallToolbar__IconContainer">
-                            <div class="LiveCallToolbar__Icon">
-                                <span class="Display">Play icon</span>
-                            </div>
+            <a class="LiveCallBottom-clean Position-Bottom" href="./">
+                <div class="LiveCallBottom__Wrapper">
+                    <div class="LiveCallBottom__VideoContainer">
+                        <video class="LiveCallFloating__Video" autoplay muted loop>
+                            <source src="/video/generic/bg_generic.webm" type="video/webm">
+                            <source src="/video/generic/bg_generic.mp4" type="video/mp4">
+                            <source src="/video/generic/bg_generic.ogg" type="video/ogg">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="LiveCallBottom__ContentContainer">
+                        <div class="LiveCallBottom__ImageContainer Display">
+                            <picture>
+                                <source media="(min-width: 414px)" srcset="/images/Dona-Flor_Logo.png">
+                                <source media="(min-width: 768px)" srcset="/images/Dona-Flor_Logo.png">
+                                <img class="LiveCallFloating__Image" src="/images/Dona-Flor_Logo.png" alt="Logo Image">
+                            </picture>
                         </div>
-                        <div class="LiveCallToolbar__DataContainer">
-                            <div class="LiveCallToolbar__LiveContainer">
-                                <div class="LiveCallToolbar__LiveCircle">
-                                    <span class="Display">Play icon</span>
-                                </div>
-                                <span class="LiveCallToolbar__LiveText">
+                        <div class="LiveCallBottom__ButtonContainer" style="justify-content: center; align-items: center;">
+                            <div class="LiveCallBottom__ButtonCopy">
+                                Ver Ahora
+                            </div>
+                            <button class="LiveCallBottom__Button" type="button" name="button" style="background:#DD307E;">
+                                <span class="LiveCallBottom__ButtonText" style="color:#ffffff;">
                                     En Vivo
                                 </span>
-                            </div>
-                            <div class="LiveCallToolbar__ShowContainer">
-                                <span class="LiveCallToolbar__ShowText">
-                                    Doña Flor y sus 2 Maridos
-                                </span>
-                            </div>
-                            <div class="LiveCallToolbar__DateContainer">
-                                <span class="LiveCallToolbar__DateText">
-                                    20:30-21:30
-                                </span>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
             </a>
+
             <section class="TextContainer">
                 <p>
                     Korn (stylized as KoЯn) is an American nu metal band from Bakersfield, California, formed in 1993. The band is notable for pioneering the nu metal genre and bringing it into the mainstream.
