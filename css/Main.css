@@ -596,7 +596,7 @@ template {
 }
 
 .LiveCallFloating__VideoContainer {
-  border-radius: 30px;
+  border-radius: 15px;
   box-shadow: -4px 4px 10px #6b6b6b;
   height: 100%;
   overflow: hidden;
