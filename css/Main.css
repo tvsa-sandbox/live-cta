@@ -244,11 +244,11 @@ template {
   text-transform: uppercase;
 }
 
-.LiveCall, .LiveCall__Wrapper-clean {
+.LiveCall, .LiveCall-clean {
   height: 60px;
   width: 100%;
 }
-.LiveCall::before, .LiveCall__Wrapper-clean::before {
+.LiveCall::before, .LiveCall-clean::before {
   content: "";
   background: linear-gradient(to right, #108674 70%, rgba(16, 134, 116, 0) 100%);
   height: 100%;
@@ -258,7 +258,7 @@ template {
   width: 30%;
   z-index: 2;
 }
-.LiveCall::after, .LiveCall__Wrapper-clean::after {
+.LiveCall::after, .LiveCall-clean::after {
   content: "";
   background: linear-gradient(to left, #108674 70%, rgba(16, 134, 116, 0) 100%);
   height: 100%;
@@ -268,13 +268,13 @@ template {
   width: 30%;
   z-index: 1;
 }
-.LiveCall__Wrapper {
+.LiveCall__Wrapper, .LiveCall .LiveCall__Wrapper-clean, .LiveCall-clean .LiveCall__Wrapper-clean {
   height: 60px;
   margin: auto;
   max-width: 1140px;
   position: relative;
 }
-.LiveCall__Wrapper::before {
+.LiveCall__Wrapper::before, .LiveCall .LiveCall__Wrapper-clean::before, .LiveCall-clean .LiveCall__Wrapper-clean::before {
   content: "";
   background: rgba(16, 134, 116, 0.5);
   height: 100%;
@@ -283,9 +283,12 @@ template {
   z-index: 1;
 }
 .LiveCall__Wrapper-clean::before {
+  background: transparent !important;
+}
+.LiveCall-clean::before {
   background: transparent;
 }
-.LiveCall__Wrapper-clean::after {
+.LiveCall-clean::after {
   background: transparent;
 }
 .LiveCall__ContentContainer {

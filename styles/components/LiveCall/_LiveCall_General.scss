@@ -31,7 +31,7 @@
 
     }
 
-    &__Wrapper {
+    &__Wrapper, %wr {
 
         height: 60px;
         margin: auto;
@@ -48,21 +48,29 @@
             z-index: 1;
 
         }
-
         &-clean {
-            @extend %lc;
-            
+            @extend %wr;
+
             &::before {
 
-                background: transparent;
+                background: transparent !important;
 
             }
+        }
+    }
+    &-clean {
+        @extend %lc;
 
-            &::after {
+        &::before {
 
-                background: transparent;
+            background: transparent;
 
-            }
+        }
+
+        &::after {
+
+            background: transparent;
+
         }
     }
 
