@@ -378,22 +378,22 @@ template {
 }
 .LiveCallBottom::before {
   content: "";
-  background: linear-gradient(to right, #870213 70%, rgba(135, 2, 19, 0) 100%);
+  background: linear-gradient(to right, #ffffff 70%, rgba(255, 255, 255, 0) 100%);
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
-  width: 30%;
+  width: 15%;
   z-index: 2;
 }
 .LiveCallBottom::after {
   content: "";
-  background: linear-gradient(to left, #870213 70%, rgba(135, 2, 19, 0) 100%);
+  background: linear-gradient(to left, #ffffff 70%, rgba(255, 255, 255, 0) 100%);
   height: 100%;
   position: absolute;
   right: 0;
   top: 0;
-  width: 30%;
+  width: 15%;
   z-index: 1;
 }
 .LiveCallBottom__Wrapper {
@@ -404,7 +404,6 @@ template {
 }
 .LiveCallBottom__Wrapper::before {
   content: "";
-  background: rgba(135, 2, 19, 0.5);
   height: 100%;
   position: absolute;
   width: 100%;
@@ -431,18 +430,17 @@ template {
 }
 
 .LiveCallBottom__ButtonContainer {
-  align-items: flex-end;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   padding: 5px;
   box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .LiveCallBottom__Button {
   border-radius: 50px;
-  padding: 6px 40px;
+  padding: 6px 20px;
   text-align: center;
   border: none;
   background: #f8d20b;
@@ -507,7 +505,7 @@ template {
   height: 60px;
   left: 0;
   margin: auto;
-  max-width: 90%;
+  max-width: 95%;
   position: fixed;
   right: 0;
 }
