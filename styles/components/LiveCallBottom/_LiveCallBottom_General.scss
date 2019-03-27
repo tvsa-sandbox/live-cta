@@ -1,6 +1,6 @@
 // LiveCallBottom | Raptor v0.0.2
 
-.LiveCallBottom {
+.LiveCallBottom, %lcb {
 
     height: 60px;
     width: 100%;
@@ -58,6 +58,22 @@
         width: 100%;
         z-index: 2;
 
+    }
+
+    &-clean {
+        @extend %lcb;
+
+        &::before {
+
+            background: transparent;
+
+        }
+
+        &::after {
+
+            background: transparent;
+
+        }
     }
 }
 

@@ -244,11 +244,11 @@ template {
   text-transform: uppercase;
 }
 
-.LiveCall {
+.LiveCall, .LiveCall__Wrapper-clean {
   height: 60px;
   width: 100%;
 }
-.LiveCall::before {
+.LiveCall::before, .LiveCall__Wrapper-clean::before {
   content: "";
   background: linear-gradient(to right, #108674 70%, rgba(16, 134, 116, 0) 100%);
   height: 100%;
@@ -258,7 +258,7 @@ template {
   width: 30%;
   z-index: 2;
 }
-.LiveCall::after {
+.LiveCall::after, .LiveCall__Wrapper-clean::after {
   content: "";
   background: linear-gradient(to left, #108674 70%, rgba(16, 134, 116, 0) 100%);
   height: 100%;
@@ -281,6 +281,12 @@ template {
   position: absolute;
   width: 100%;
   z-index: 1;
+}
+.LiveCall__Wrapper-clean::before {
+  background: transparent;
+}
+.LiveCall__Wrapper-clean::after {
+  background: transparent;
 }
 .LiveCall__ContentContainer {
   display: flex;
@@ -372,11 +378,11 @@ template {
   width: 100%;
 }
 
-.LiveCallBottom {
+.LiveCallBottom, .LiveCallBottom-clean {
   height: 60px;
   width: 100%;
 }
-.LiveCallBottom::before {
+.LiveCallBottom::before, .LiveCallBottom-clean::before {
   content: "";
   background: linear-gradient(to right, #ffffff 70%, rgba(255, 255, 255, 0) 100%);
   height: 100%;
@@ -386,7 +392,7 @@ template {
   width: 15%;
   z-index: 2;
 }
-.LiveCallBottom::after {
+.LiveCallBottom::after, .LiveCallBottom-clean::after {
   content: "";
   background: linear-gradient(to left, #ffffff 70%, rgba(255, 255, 255, 0) 100%);
   height: 100%;
@@ -416,6 +422,12 @@ template {
   top: 0;
   width: 100%;
   z-index: 2;
+}
+.LiveCallBottom-clean::before {
+  background: transparent;
+}
+.LiveCallBottom-clean::after {
+  background: transparent;
 }
 
 .Position-Below {
@@ -460,7 +472,7 @@ template {
   color: #ffffff;
   font-family: Helvetica;
   font-size: 10px;
-  padding: 0 0 4px 0;
+  padding: 0 0px 4px 0;
   text-align: center;
   text-transform: uppercase;
 }
